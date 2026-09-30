@@ -8,11 +8,11 @@
 
 ## 这是什么
 
-`@anysearch/anysearch-dsh` 是 AnySearch 面向 DeepSeek Harness 的 Web 插件。安装后，DeepSeek Harness 内置的 `web_search` 会使用 AnySearch 完成实时网页搜索，`web_fetch` 会使用 AnySearch Extract 抓取并清洗指定 URL。
+`@gw/dsh-anysearch-dsh` 是 AnySearch 面向 DeepSeek Harness 的 Web 插件。安装后，DeepSeek Harness 内置的 `web_search` 会使用 AnySearch 完成实时网页搜索，`web_fetch` 会使用 AnySearch Extract 抓取并清洗指定 URL。
 
 你不需要让模型学习新的普通搜索或抓取工具，也不需要单独配置 MCP Server。Agent 仍然调用 Harness 原生的 `web_search` 和 `web_fetch`，插件负责把请求发送到 AnySearch，并将结果转换为 Harness 的通用结果。
 
-项目地址：<https://github.com/anysearch-team/anysearch-dsh>
+项目地址：<https://github.com/1497105876/dsh-anysearch-dsh>
 
 ## 当前版本支持什么
 
@@ -53,7 +53,7 @@ DeepSeek Harness 当前仍处于开发预览阶段。Harness 发布不兼容变�
 将 npm 包安装到 DeepSeek Harness 的 `web` profile：
 
 ```bash
-npx -y @deepseek-ai/dsh plugin --profile web add @anysearch/anysearch-dsh
+npx -y @deepseek-ai/dsh plugin --profile web add @gw/dsh-anysearch-dsh
 ```
 
 这一步会向 `web` profile 添加插件，把 AnySearch 选为该 profile 的搜索和抓取 Provider，并启用原生 `web_fetch`。
@@ -181,7 +181,7 @@ npx -y @deepseek-ai/dsh --profile web --dump-config
 
 ```yaml
 - id: web-search-anysearch
-  name: '@anysearch/anysearch-dsh'
+  name: '@gw/dsh-anysearch-dsh'
 ```
 
 还应确认 `tool-web` 配置包含 `fetch: true`。然后启动 profile，分别提出需要联网搜索和读取确定 URL 的问题。如果 Provider 未注册，Harness 会报告配置的对应 Provider 缺失；如果 AnySearch 返回错误，工具会显示安全错误消息或 HTTP 状态说明。

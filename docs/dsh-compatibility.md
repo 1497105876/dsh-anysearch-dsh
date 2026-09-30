@@ -1,8 +1,10 @@
 # DSH compatibility
 
 This source tree targets every currently installable published DSH release listed
-below. These changes are not yet published: npm `@anysearch/anysearch-dsh@0.1.6`
-still declares the older peer dependency range reported in issue #12.
+below. These changes are not yet published: the most recent npm release,
+`@anysearch/anysearch-dsh@0.1.6` (published under the previous package name
+before this plugin became an independent project), still declares the older
+peer dependency range.
 
 As checked on 2026-10-01, the DSH npm `latest` and `next` tags point to
 `0.2.0-rc.2`; `alpha` points to `0.1.7-alpha.2`. All published DSH versions are
@@ -79,7 +81,7 @@ the matrix and updating the peer ranges and version list before being advertised
 as supported. Prerelease ranges are explicit because a broad numeric range does
 not automatically admit every prerelease series.
 
-## Desktop versions and issue #12
+## Desktop versions
 
 The plugin does not reject a host based on its CLI or desktop display version.
 Its version declarations constrain the DSH component packages supplied by the

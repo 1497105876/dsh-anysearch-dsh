@@ -27,7 +27,7 @@ The supported runtime is Node.js 22.19 or Node.js 24+, with pnpm 11.7. If a comm
 Install AnySearch into the DeepSeek Harness `web` profile:
 
 ```sh
-npx -y @deepseek-ai/dsh plugin --profile web add @anysearch/anysearch-dsh
+npx -y @deepseek-ai/dsh plugin --profile web add @gw/dsh-anysearch-dsh
 ```
 
 Do not use `sudo`, create a second provider entry, or change the profile unless the user explicitly requests it.
@@ -55,7 +55,7 @@ Also confirm that the AnySearch plugin entry is present:
 
 ```yaml
 - id: web-search-anysearch
-  name: "@anysearch/anysearch-dsh"
+  name: "@gw/dsh-anysearch-dsh"
   config:
     apiKeyEnv: ANYSEARCH_API_KEY
 ```

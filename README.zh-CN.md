@@ -1,12 +1,12 @@
 <div align="center">
   <a href="https://anysearch.com"><img src="docs/assets/anysearch-logo.svg" alt="AnySearch Logo" width="96" height="96"></a>
-  <h1>@anysearch/anysearch-dsh</h1>
+  <h1>@gw/dsh-anysearch-dsh</h1>
   <p>由 AnySearch 驱动，为 DeepSeek Harness 提供实时网页搜索与垂直领域搜索能力。</p>
-  <p><a href="https://anysearch.com"><img src="https://img.shields.io/badge/AnySearch-AI_Search-485DC9.svg?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzQ4NzZfNzgwKSI+CjxwYXRoIGQ9Ik02IDguNUgzLjVWMy41SDguNVY2SDExVjFIMVYxMUg2VjguNVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMSA4LjVIOC41VjExSDExVjguNVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik02IDguNUgzLjVWMTFINlY4LjVaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMy41IDFIMVYzLjVIMy41VjFaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNOC41IDFIMy41VjMuNUg4LjVWMVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMSAxSDguNVYzLjVIMTFWMVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMSAzLjVIOC41VjZIMTFWMy41WiIgZmlsbD0id2hpdGUiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF80ODc2Xzc4MCI+CjxyZWN0IHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMSkiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K" alt="AnySearch AI Search"></a> <a href="https://www.npmjs.com/package/@anysearch/anysearch-dsh"><img src="https://img.shields.io/npm/v/%40anysearch%2Fanysearch-dsh?logo=npm" alt="npm 版本"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT 许可证"></a> <a href="https://github.com/deepseek-ai/deepseek-harness"><img src="https://img.shields.io/badge/DeepSeek-Harness-4F46E5" alt="DeepSeek Harness 插件"></a></p>
+  <p><a href="https://anysearch.com"><img src="https://img.shields.io/badge/AnySearch-AI_Search-485DC9.svg?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzQ4NzZfNzgwKSI+CjxwYXRoIGQ9Ik02IDguNUgzLjVWMy41SDguNVY2SDExVjFIMVYxMUg2VjguNVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMSA4LjVIOC41VjExSDExVjguNVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik02IDguNUgzLjVWMTFINlY4LjVaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMy41IDFIMVYzLjVIMy41VjFaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNOC41IDFIMy41VjMuNUg4LjVWMVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMSAxSDguNVYzLjVIMTFWMVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMSAzLjVIOC41VjZIMTFWMy41WiIgZmlsbD0id2hpdGUiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF80ODc2Xzc4MCI+CjxyZWN0IHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMSkiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K" alt="AnySearch AI Search"></a> <a href="https://www.npmjs.com/package/@gw/dsh-anysearch-dsh"><img src="https://img.shields.io/npm/v/%40gw%2Fdsh-anysearch-dsh?logo=npm" alt="npm 版本"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT 许可证"></a> <a href="https://github.com/deepseek-ai/deepseek-harness"><img src="https://img.shields.io/badge/DeepSeek-Harness-4F46E5" alt="DeepSeek Harness 插件"></a></p>
   <p><a href="README.md">English</a> | <strong>简体中文</strong></p>
 </div>
 
-`@anysearch/anysearch-dsh` 将 [AnySearch](https://anysearch.com) 作为插件接入 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)。无需改变 Harness 使用方式，即可通过原生 `web_search` 和 `web_fetch` 获得实时网页搜索、URL 清洗正文、垂直领域搜索和批量搜索能力。
+`@gw/dsh-anysearch-dsh` 将 [AnySearch](https://anysearch.com) 作为插件接入 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)。无需改变 Harness 使用方式，即可通过原生 `web_search` 和 `web_fetch` 获得实时网页搜索、URL 清洗正文、垂直领域搜索和批量搜索能力。
 
 AnySearch 是面向 AI Agent 的搜索基础设施，覆盖公开网页，以及代码、金融、学术、法律、安全等专业数据源。
 
@@ -16,7 +16,7 @@ AnySearch 是面向 AI Agent 的搜索基础设施，覆盖公开网页，以及
 
 ```sh
 # 获取完整安装指南，通读全文，然后严格按步骤执行：
-curl -fsSL https://raw.githubusercontent.com/anysearch-team/anysearch-dsh/refs/heads/main/docs/agent-installation.md
+curl -fsSL https://raw.githubusercontent.com/1497105876/dsh-anysearch-dsh/refs/heads/main/docs/agent-installation.md
 ```
 
 ### 面向人类
@@ -24,7 +24,7 @@ curl -fsSL https://raw.githubusercontent.com/anysearch-team/anysearch-dsh/refs/h
 将插件安装到 `web` profile：
 
 ```sh
-npx -y @deepseek-ai/dsh plugin --profile web add @anysearch/anysearch-dsh
+npx -y @deepseek-ai/dsh plugin --profile web add @gw/dsh-anysearch-dsh
 ```
 
 启动 DeepSeek Harness：
@@ -106,13 +106,13 @@ Windows、Linux 和 macOS 使用相同的安装命令。安装前请确保 Node.
 更新：
 
 ```sh
-npx -y @deepseek-ai/dsh plugin --profile web update @anysearch/anysearch-dsh
+npx -y @deepseek-ai/dsh plugin --profile web update @gw/dsh-anysearch-dsh
 ```
 
 移除：
 
 ```sh
-npx -y @deepseek-ai/dsh plugin --profile web remove @anysearch/anysearch-dsh
+npx -y @deepseek-ai/dsh plugin --profile web remove @gw/dsh-anysearch-dsh
 ```
 
 ## 兼容性与限制
@@ -129,26 +129,13 @@ npx -y @deepseek-ai/dsh plugin --profile web remove @anysearch/anysearch-dsh
 
 ## 社群与支持
 
-欢迎加入 AnySearch 社群，交流使用体验、反馈问题并获取技术支持。
-
-- [GitHub Issues](https://github.com/anysearch-team/anysearch-dsh/issues)：提交问题报告和使用反馈。
-- 微信群：扫描下方二维码填写入群问卷，工作人员审核后会邀请你加入。
-- [Discord 社群](https://discord.gg/3WAmxyuBSc)：扫描二维码或点击链接直接加入。
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center"><strong>微信群入群问卷</strong><br><img src="docs/assets/discord-community-qr.png" alt="微信群入群问卷二维码" width="180"></td>
-      <td align="center"><strong>Discord 邀请</strong><br><img src="docs/assets/wechat-community-qr.jpg" alt="Discord 邀请二维码" width="180"></td>
-    </tr>
-  </table>
-</div>
+- [GitHub Issues](https://github.com/1497105876/dsh-anysearch-dsh/issues)：提交问题报告和使用反馈。
 
 ## 开发
 
 ```sh
-git clone https://github.com/anysearch-team/anysearch-dsh.git
-cd anysearch-dsh
+git clone https://github.com/1497105876/dsh-anysearch-dsh.git
+cd dsh-anysearch-dsh
 pnpm install
 pnpm run check
 ```

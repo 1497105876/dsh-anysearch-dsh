@@ -1,5 +1,7 @@
 # 发布 `@anysearch/anysearch-dsh` 到 npm
 
+> **历史文档声明（2026-10-01）**：插件已迁移为独立项目 `@gw/dsh-anysearch-dsh`（仓库 `1497105876/dsh-anysearch-dsh`）。本文档保留的是旧包名 `@anysearch/anysearch-dsh@0.1.0` 的首次发布流程与校验值，仅作历史参考；发布 `@gw/dsh-anysearch-dsh` 新版本时，需更新包名、版本号、tarball 文件名与校验值后重新执行相应流程。
+
 本文用于从另一台 Windows 电脑，以 `anysearch` npm 组织中的主账号首次发布 `@anysearch/anysearch-dsh@0.1.0`。
 
 ## 发布目标

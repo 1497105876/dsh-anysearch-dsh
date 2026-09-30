@@ -1,12 +1,12 @@
 <div align="center">
   <a href="https://anysearch.com"><img src="docs/assets/anysearch-logo.svg" alt="AnySearch logo" width="96" height="96"></a>
-  <h1>@anysearch/anysearch-dsh</h1>
+  <h1>@gw/dsh-anysearch-dsh</h1>
   <p>AnySearch-powered real-time web and vertical search for DeepSeek Harness.</p>
-  <p><a href="https://anysearch.com"><img src="https://img.shields.io/badge/AnySearch-AI_Search-485DC9.svg?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzQ4NzZfNzgwKSI+CjxwYXRoIGQ9Ik02IDguNUgzLjVWMy41SDguNVY2SDExVjFIMVYxMUg2VjguNVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMSA4LjVIOC41VjExSDExVjguNVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik02IDguNUgzLjVWMTFINlY4LjVaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMy41IDFIMVYzLjVIMy41VjFaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNOC41IDFIMy41VjMuNUg4LjVWMVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMSAxSDguNVYzLjVIMTFWMVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMSAzLjVIOC41VjZIMTFWMy41WiIgZmlsbD0id2hpdGUiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF80ODc2Xzc4MCI+CjxyZWN0IHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMSkiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K" alt="AnySearch AI Search"></a> <a href="https://www.npmjs.com/package/@anysearch/anysearch-dsh"><img src="https://img.shields.io/npm/v/%40anysearch%2Fanysearch-dsh?logo=npm" alt="npm version"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license"></a> <a href="https://github.com/deepseek-ai/deepseek-harness"><img src="https://img.shields.io/badge/DeepSeek-Harness-4F46E5" alt="DeepSeek Harness plugin"></a></p>
+  <p><a href="https://anysearch.com"><img src="https://img.shields.io/badge/AnySearch-AI_Search-485DC9.svg?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzQ4NzZfNzgwKSI+CjxwYXRoIGQ9Ik02IDguNUgzLjVWMy41SDguNVY2SDExVjFIMVYxMUg2VjguNVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMSA4LjVIOC41VjExSDExVjguNVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik02IDguNUgzLjVWMTFINlY4LjVaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMy41IDFIMVYzLjVIMy41VjFaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNOC41IDFIMy41VjMuNUg4LjVWMVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMSAxSDguNVYzLjVIMTFWMVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMSAzLjVIOC41VjZIMTFWMy41WiIgZmlsbD0id2hpdGUiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF80ODc2Xzc4MCI+CjxyZWN0IHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMSkiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K" alt="AnySearch AI Search"></a> <a href="https://www.npmjs.com/package/@gw/dsh-anysearch-dsh"><img src="https://img.shields.io/npm/v/%40gw%2Fdsh-anysearch-dsh?logo=npm" alt="npm version"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license"></a> <a href="https://github.com/deepseek-ai/deepseek-harness"><img src="https://img.shields.io/badge/DeepSeek-Harness-4F46E5" alt="DeepSeek Harness plugin"></a></p>
   <p><strong>English</strong> | <a href="README.zh-CN.md">简体中文</a></p>
 </div>
 
-`@anysearch/anysearch-dsh` connects [AnySearch](https://anysearch.com) to [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) as a plugin. Keep using Harness's native `web_search` and `web_fetch` while gaining real-time web search, cleaned URL content, vertical search, and concurrent batch search.
+`@gw/dsh-anysearch-dsh` connects [AnySearch](https://anysearch.com) to [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) as a plugin. Keep using Harness's native `web_search` and `web_fetch` while gaining real-time web search, cleaned URL content, vertical search, and concurrent batch search.
 
 AnySearch is search infrastructure for AI agents, covering the public web and specialized data sources across code, finance, academia, law, security, and more.
 
@@ -16,7 +16,7 @@ AnySearch is search infrastructure for AI agents, covering the public web and sp
 
 ```sh
 # Fetch the complete installation guide, read it end to end, and then follow it step by step:
-curl -fsSL https://raw.githubusercontent.com/anysearch-team/anysearch-dsh/refs/heads/main/docs/agent-installation.md
+curl -fsSL https://raw.githubusercontent.com/1497105876/dsh-anysearch-dsh/refs/heads/main/docs/agent-installation.md
 ```
 
 ### For Humans
@@ -24,7 +24,7 @@ curl -fsSL https://raw.githubusercontent.com/anysearch-team/anysearch-dsh/refs/h
 Install the plugin into the `web` profile:
 
 ```sh
-npx -y @deepseek-ai/dsh plugin --profile web add @anysearch/anysearch-dsh
+npx -y @deepseek-ai/dsh plugin --profile web add @gw/dsh-anysearch-dsh
 ```
 
 Start DeepSeek Harness:
@@ -106,13 +106,13 @@ To customize it, ask an AI assistant—or edit it manually—to add the complete
 Update:
 
 ```sh
-npx -y @deepseek-ai/dsh plugin --profile web update @anysearch/anysearch-dsh
+npx -y @deepseek-ai/dsh plugin --profile web update @gw/dsh-anysearch-dsh
 ```
 
 Remove:
 
 ```sh
-npx -y @deepseek-ai/dsh plugin --profile web remove @anysearch/anysearch-dsh
+npx -y @deepseek-ai/dsh plugin --profile web remove @gw/dsh-anysearch-dsh
 ```
 
 ## Compatibility and limitations
@@ -129,26 +129,13 @@ npx -y @deepseek-ai/dsh plugin --profile web remove @anysearch/anysearch-dsh
 
 ## Community & Support
 
-Join the AnySearch community to share your experience, report issues, and get technical support.
-
-- [GitHub Issues](https://github.com/anysearch-team/anysearch-dsh/issues): submit bug reports and usage feedback.
-- WeChat Group: scan the QR code below and complete the group survey; staff will invite you after review.
-- [Discord Community](https://discord.gg/3WAmxyuBSc): scan the QR code or follow the link to join directly.
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center"><strong>WeChat group survey</strong><br><img src="docs/assets/discord-community-qr.png" alt="WeChat group survey QR code" width="180"></td>
-      <td align="center"><strong>Discord invite</strong><br><img src="docs/assets/wechat-community-qr.jpg" alt="Discord invite QR code" width="180"></td>
-    </tr>
-  </table>
-</div>
+- [GitHub Issues](https://github.com/1497105876/dsh-anysearch-dsh/issues): submit bug reports and usage feedback.
 
 ## Development
 
 ```sh
-git clone https://github.com/anysearch-team/anysearch-dsh.git
-cd anysearch-dsh
+git clone https://github.com/1497105876/dsh-anysearch-dsh.git
+cd dsh-anysearch-dsh
 pnpm install
 pnpm run check
 ```

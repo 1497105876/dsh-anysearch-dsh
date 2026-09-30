@@ -1,5 +1,5 @@
 {
-  "name": "@anysearch/anysearch-dsh",
+  "name": "@gw/dsh-anysearch-dsh",
   "version": "0.1.7",
   "description": "AnySearch web search and fetch providers plus advanced tools for DeepSeek Harness",
   "keywords": [
@@ -9,16 +9,16 @@
     "web-search",
     "web-fetch"
   ],
-  "homepage": "https://github.com/anysearch-team/anysearch-dsh#readme",
+  "homepage": "https://github.com/1497105876/dsh-anysearch-dsh#readme",
   "bugs": {
-    "url": "https://github.com/anysearch-team/anysearch-dsh/issues"
+    "url": "https://github.com/1497105876/dsh-anysearch-dsh/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anysearch-team/anysearch-dsh.git"
+    "url": "git+https://github.com/1497105876/dsh-anysearch-dsh.git"
   },
   "license": "MIT",
-  "author": "AnySearch Team",
+  "author": "1497105876",
   "type": "module",
   "sideEffects": false,
   "main": "lib/index.js",

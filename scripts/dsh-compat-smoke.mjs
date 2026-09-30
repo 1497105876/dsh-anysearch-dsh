@@ -5,7 +5,7 @@ import SystemPrompt from '@deepseek-ai/dsh-system-prompt'
 import ToolRuntime from '@deepseek-ai/dsh-tools'
 import WebRuntime from '@deepseek-ai/dsh-web'
 import * as webTools from '@deepseek-ai/dsh-tool-web'
-import * as plugin from '@anysearch/anysearch-dsh'
+import * as plugin from '@gw/dsh-anysearch-dsh'
 
 const callId = llm.ToolCallId ?? llm.CallId
 assert.equal(typeof callId, 'function', 'DSH call ID constructor missing')
