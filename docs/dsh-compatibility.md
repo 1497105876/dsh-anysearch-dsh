@@ -1,11 +1,11 @@
 # DSH compatibility
 
 This source tree targets every currently installable published DSH release listed
-below. These changes are not yet published: npm `@anysearch/anysearch-dsh@0.1.5`
+below. These changes are not yet published: npm `@anysearch/anysearch-dsh@0.1.6`
 still declares the older peer dependency range reported in issue #12.
 
-As checked on 2026-09-20, the DSH npm `latest` and `next` tags point to
-`0.1.5-rc.2`; `alpha` points to `0.1.6-alpha.2`. All published DSH versions are
+As checked on 2026-09-30, the DSH npm `latest` and `next` tags point to
+`0.2.0-rc.2`; `alpha` points to `0.1.7-alpha.2`. All published DSH versions are
 prereleases. Sources: [npm metadata](https://registry.npmjs.org/@deepseek-ai/dsh),
 [upstream releases](https://github.com/deepseek-ai/deepseek-harness/releases).
 
@@ -20,6 +20,7 @@ prereleases. Sources: [npm metadata](https://registry.npmjs.org/@deepseek-ai/dsh
 | 0.1.3 | alpha.2 |
 | 0.1.5 | alpha.1, alpha.2, rc.1, rc.2 |
 | 0.1.6 | alpha.1, alpha.2 |
+| 0.1.7 | alpha.1, alpha.2, rc.1, rc.2 |
 
 The two earlier releases, `0.0.1-rc.1` and `0.0.1-rc.2`, cannot currently be
 installed with their complete published peer dependency graphs. Their
@@ -56,7 +57,7 @@ pnpm install --frozen-lockfile
 pnpm run test:compat
 
 # Select particular releases:
-pnpm run test:compat 0.1.5-rc.2 0.1.6-alpha.2
+pnpm run test:compat 0.1.6-alpha.2 0.1.7-rc.2
 
 # Check the current registry catalog, excluding the two documented unavailable releases:
 pnpm run test:compat --published
