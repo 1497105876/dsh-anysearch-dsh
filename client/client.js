@@ -156,6 +156,9 @@ window.__ModuleLoader__.load({
       });
     }
 
+    // 0.2.0 渲染器要求：声明等待的服务，否则 fiber 不会激活（Renderer boot failed）。
+    // apply 里用 ctx.slots 注册面板插槽，这里必须等 slots 就绪。
+    exports.inject = ["slots"];
     exports.apply = apply;
     return module.exports;
   }
