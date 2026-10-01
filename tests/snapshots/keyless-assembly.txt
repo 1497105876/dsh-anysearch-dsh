@@ -2,13 +2,13 @@
   "tools": [
     {
       "name": "anysearch_batch_search",
-      "description": "Run one to five independent AnySearch searches concurrently. Results stay in input order and an item failure does not discard other results.",
+      "description": "Run one to 5 independent AnySearch searches concurrently. Results stay in input order and an item failure does not discard other results.",
       "parameters": {
         "type": "object",
         "properties": {
           "items": {
             "type": "array",
-            "description": "One to five search requests. Discover vertical tags with anysearch_capabilities first.",
+            "description": "One to 5 search requests. Discover vertical tags with anysearch_capabilities first.",
             "items": {
               "type": "object",
               "additionalProperties": false,

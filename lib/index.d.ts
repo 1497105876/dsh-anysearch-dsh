@@ -23,6 +23,8 @@ export interface Config {
     baseURL?: string;
     /** Aggregate cleaned-content characters rendered to the model by one advanced tool operation. */
     maxRenderedContentChars?: number;
+    /** Maximum independent searches accepted by one batch operation. Defaults to 5. */
+    maxBatchSearches?: number;
 }
 /** Fully validated configuration consumed by the plugin runtime. */
 export interface ResolvedConfig {
@@ -32,6 +34,8 @@ export interface ResolvedConfig {
     baseURL: string;
     /** Aggregate cleaned-content characters rendered by one tool operation. */
     maxRenderedContentChars: number;
+    /** Maximum independent searches accepted by one batch operation. */
+    maxBatchSearches: number;
 }
 export declare const Config: z<Config>;
 /** Resolve defaults and reject self-contained configuration errors before registration. */

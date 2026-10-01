@@ -5,8 +5,8 @@ import type { AnySearchClient } from '../client.ts';
 import type { AnySearchMetadata, AnySearchResult, AnySearchSearchRequest } from '../types.ts';
 /** Stable model-facing name for bounded client-side search fanout. */
 export declare const ANYSEARCH_BATCH_SEARCH_TOOL_NAME = "anysearch_batch_search";
-/** Maximum independent HTTP requests accepted by one batch operation. */
-export declare const MAX_BATCH_SEARCH_ITEMS = 5;
+/** Default maximum independent HTTP requests accepted by one batch operation. */
+export declare const DEFAULT_MAX_BATCH_SEARCH_ITEMS = 5;
 /** Parsed batch item sent to the shared client. */
 export interface AnySearchBatchItem {
     /** Validated AnySearch search request. */
@@ -55,7 +55,7 @@ interface BatchToolItemArgs {
     includeContent?: boolean;
 }
 /** Validate every batch item before any HTTP request begins. */
-export declare function parseBatchSearchItems(items: BatchToolItemArgs[]): AnySearchBatchItem[];
+export declare function parseBatchSearchItems(items: BatchToolItemArgs[], maxItems?: number): AnySearchBatchItem[];
 /** Render ordered batch outcomes with one aggregate model-content budget. */
 export declare function formatBatchSearchOutput(args: {
     items: BatchToolItemArgs[];
@@ -63,5 +63,5 @@ export declare function formatBatchSearchOutput(args: {
 /** Execute validated items concurrently while preserving independent failures and input order. */
 export declare function executeBatchSearch(client: AnySearchClient, parsed: AnySearchBatchItem[], signal: AbortSignal, maxRenderedContentChars: number): Promise<AnySearchBatchOutput>;
 /** Register bounded client-side batch search on the Harness tool registry. */
-export declare function registerBatchSearchTool(ctx: Context, client: AnySearchClient, maxRenderedContentChars: number): void;
+export declare function registerBatchSearchTool(ctx: Context, client: AnySearchClient, maxRenderedContentChars: number, maxBatchSearches?: number): void;
 export {};

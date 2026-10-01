@@ -13,8 +13,8 @@ import { canonicalSearchResults, parseAdvancedSearchArgs, renderableContentChara
 /** Stable model-facing name for bounded client-side search fanout. */
 export const ANYSEARCH_BATCH_SEARCH_TOOL_NAME = 'anysearch_batch_search'
 
-/** Maximum independent HTTP requests accepted by one batch operation. */
-export const MAX_BATCH_SEARCH_ITEMS = 5
+/** Default maximum independent HTTP requests accepted by one batch operation. */
+export const DEFAULT_MAX_BATCH_SEARCH_ITEMS = 5
 
 /** Parsed batch item sent to the shared client. */
 export interface AnySearchBatchItem {
@@ -157,10 +157,13 @@ const outputSchema = {
 } as const
 
 /** Validate every batch item before any HTTP request begins. */
-export function parseBatchSearchItems(items: BatchToolItemArgs[]): AnySearchBatchItem[] {
+export function parseBatchSearchItems(
+  items: BatchToolItemArgs[],
+  maxItems: number = DEFAULT_MAX_BATCH_SEARCH_ITEMS,
+): AnySearchBatchItem[] {
   if (items.length === 0) throw new Error('items must contain at least one search')
-  if (items.length > MAX_BATCH_SEARCH_ITEMS) {
-    throw new Error(`items must contain at most ${MAX_BATCH_SEARCH_ITEMS} searches`)
+  if (items.length > maxItems) {
+    throw new Error(`items must contain at most ${maxItems} searches`)
   }
   return items.map((item) => {
     const parsed = parseAdvancedSearchArgs(item)
@@ -273,17 +276,18 @@ export function registerBatchSearchTool(
   ctx: Context,
   client: AnySearchClient,
   maxRenderedContentChars: number,
+  maxBatchSearches: number = DEFAULT_MAX_BATCH_SEARCH_ITEMS,
 ): void {
   ctx.tools.register(defineTool({
     name: ANYSEARCH_BATCH_SEARCH_TOOL_NAME,
     timeoutMs: ANYSEARCH_TOOL_TIMEOUT_MS,
-    description: 'Run one to five independent AnySearch searches concurrently. Results stay in input order and an item failure does not discard other results.',
+    description: `Run one to ${maxBatchSearches} independent AnySearch searches concurrently. Results stay in input order and an item failure does not discard other results.`,
     parameters: {
       items: {
         type: 'array',
         required: true,
         items: inputItemSchema,
-        description: 'One to five search requests. Discover vertical tags with anysearch_capabilities first.',
+        description: `One to ${maxBatchSearches} search requests. Discover vertical tags with anysearch_capabilities first.`,
       },
     },
     output: {
@@ -295,7 +299,7 @@ export function registerBatchSearchTool(
     },
     isConcurrencySafe: () => true,
     async execute(args, exec) {
-      const parsed = parseBatchSearchItems(args.items)
+      const parsed = parseBatchSearchItems(args.items, maxBatchSearches)
       return executeBatchSearch(client, parsed, exec.signal, maxRenderedContentChars)
     },
     presentCall: (args): GenericCallView => ({

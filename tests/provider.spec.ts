@@ -330,7 +330,11 @@ describe('AnySearch plugin registration', () => {
       apiKeyEnv: 'ANYSEARCH_API_KEY',
       baseURL: 'https://api.anysearch.com',
       maxRenderedContentChars: 12_000,
+      maxBatchSearches: 5,
     })
+    expect(resolveConfig({ maxBatchSearches: 12 })).toMatchObject({ maxBatchSearches: 12 })
+    expect(() => resolveConfig({ maxBatchSearches: 21 })).toThrow('maxBatchSearches must be an integer from 1 to 20')
+    expect(() => resolveConfig({ maxBatchSearches: 0 })).toThrow('maxBatchSearches must be an integer from 1 to 20')
     expect(resolveConfig({ apiKeyEnv: ' CUSTOM_KEY ', baseURL: 'https://example.test/root/' }))
       .toMatchObject({ apiKeyEnv: 'CUSTOM_KEY', baseURL: 'https://example.test/root/' })
     expect(() => resolveConfig({ apiKeyEnv: '   ' })).toThrow('apiKeyEnv must be a non-empty credential reference')
